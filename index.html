@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"
+        <title>Formularz-28.02</title>
+    </head>
+    <body>
+        <form action="">
+            <fieldset>
+                <legend>Dane członka OFE</legend>
+                <div>
+                <label for="nazwisko">Nazwisko</label>
+                <input type="text" id="nazwisko"/>
+            </div>
+        <div>
+                <label>
+                    Imiona
+                    <input type="text">
+                    <input type="text">
+                    <input type="text">
+                </label>
+        </div>
+        <div>
+            <label>
+                Data urodz.
+                <input type="number">
+                /
+                <input type="number">
+                /
+                <input type="number">
+
+                Płeć
+                <select>
+                    <option value="Kobieta">Kobieta</option>
+                    <option value="meżczyzna">Mężczyzna</option>
+                </select>
+            </label>
+        </div>
+        <div>
+            <label>
+                Pesel
+                <input type="number">
+            </label>
+        <label>
+            NIP
+            <input type="number">
+            /
+            <input type="number">
+            /
+            <input type="number">
+            /
+            <input type="number">
+        </label>
+        </div>
+        <div>
+            <label>
+                Dokument
+                <select>
+                    <option value="dowód">Dowód</option>
+                    <option value="paszport">Paszport</option>
+                </select>
+            </label>
+            <label>
+                Seria i nr dok.
+                <input type="text" />
+            </label>
+        </div>
+            </fieldset>
+
+            <label>
+                Czy lubisz się uczyć?
+                <input type="radio" name="nauka" value="tak"> Tak
+                <input type="radio" name="nauka" value="nie"> Nie
+            </label>
+
+            <label>
+                Zainteresowania
+                <div><input type="checkbox" name="zainteresowania"> Siatkówka</div>
+            <div><input type="checkbox" name="zainteresowania"> Czytanie</div>
+            <div><input type="checkbox" name="zainteresowania"> Piłka nożna</div>
+            <div><input type="checkbox" name="zainteresowania"> Film</div>
+            </label>
+        </form>
+    </body>    
+</html>
