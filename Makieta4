@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makieta4</title>
+</head>
+<body>
+    <header>
+        <section class='about_company'>
+            <img src="https://via.placeholder.com/390x200" alt="logo firmy">
+            <h2>Nazwa firmy</h2>
+        </section>
+        <nav class="main_menu">
+            <ul class='menu_items'>
+                <li class="menu_item">
+                    <a class='menu_link' href="#">start</a>
+                </li>
+            </ul>
+            <ul class='menu_items'>
+                <li class="menu_item">
+                    <a class='menu_link' href="#">oferta</a>
+                </li>
+            </ul>
+            <ul class='menu_items'>
+                <li class="menu_item">
+                    <a class='menu_link' href="#">galeria</a>
+                </li>
+            </ul>
+            <ul class='menu_items'>
+                <li class="menu_item">
+                    <a class='menu_link' href="#">kontakt</a>
+                </li>
+            </ul>
+        </nav>
+    
+    </header>
+ <section class="information">
+     <div class="info">
+         <h1>Info 1</h1>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ipsa eos aliquam officia, quasi ut assumenda reprehenderit. </p>
+         <a  href="oferta1.html"></a>
+     </div>
+     <div class="info">
+        <h1>Info 2</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ipsa eos aliquam officia, quasi ut assumenda reprehenderit. </p>
+        <a  href="oferta2.html"></a>
+    </div>
+    <div class="info">
+        <h1>Info 3</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ipsa eos aliquam officia, quasi ut assumenda reprehenderit. </p>
+        <a  href="oferta3.html"></a>
+    </div>
+ </section>
+ <section>
+     <h3>Galeria</h3>
+     <div>
+     <img src="https://via.placeholder.com/200x200" alt="">
+        <img src="https://via.placeholder.com/200x200" alt="">
+        <img src="https://via.placeholder.com/200x200" alt="">
+        <img src="https://via.placeholder.com/200x200" alt="">
+       </div>
+       <button>Więcej</button>
+ </section>
+ <footer>
+     <div class="copyright">dane teleadresowe</div>
+     <div class="social_icons">
+         <a href="facebook.com"></a>
+         <a href="google.com"></a>
+     </div>
+ </footer>
+
+</body>
+</html>
