@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <input type="number" name="liczba" />
+        <button>Sprawdź</button>
+        <div class="wynik"></div>
+        <script>
+            //pobieramy/odwołujemy się do poszczególnego elementu html, obecnie pobierzemy button oraz div
+
+            const btn = document.querySelector('button'); //pobieramy po nazwie znacznika html
+            const divW=document.querySelector('div.wynik'); //pobiera po nazwie znacznika html w połączeniu z nazwą klasy
+            //do przycisku (zmiennej btn) przypisujemy zdarzenie  klikania myszką na przycisk
+            btn.addEventListener('click', function() { //a(click) - nazwa zdarzenia, b(function) - funkcja, która wywoła się w momencie kliknięcia w przycisk
+            
+           
+            //pobieramy wartość pola input o nazwie liczba
+            const lczb=document.querySelector('input[name="liczba"]').value*1;
+            
+            
+                 // ZADANIE 1
+             /*    if (lczb%2==0){
+                     divW.textContent = 'Liczba jest parzysta';
+                 } else {
+                     divW.textContent = "Liczba jest NIE parzysta"
+                 }*/
+
+        //const liczba=prompt("Podaj liczbę: ");
+
+        /*if(liczba%2==0) {
+            document.write('Podana liczba jest parzysta');
+        } else {
+            document.write('Podana liczba jest nieparzysta')
+        }*/
+
+                //ZADANIE 2
+      /* if(lczb>5 && lczb != 6 && lczb!=12 || lczb==0){
+            document.write('Podana liczba spełnia warunek');
+        } else (
+            document.write('Podana liczba NIE spełnia warunku')
+        )*/
+
+                //ZADANIE 3
+        /*if (lczb==1){
+            divW.textContent = 'Poniedziałek';
+        } else if(lczb==2){
+            divW.textContent = 'Wtorek';
+        } else if (lczb == 3){
+            divW.textContent = 'Środa';
+        } else if (lczb == 4){
+            divW.textContent='Czwartek';
+        }  else if (lczb == 5){
+            divW.textContent='Piątek';
+        } else if (lczb == 6){
+            divW.textContent='Sobota';
+        } else if (lczb == 7){
+           divW.textContent='Niedziela'
+        } else {
+            divW.textContent='Zła liczba'
+        }*/
+
+                 //ZADANIE 4
+       /* const liczbaa=prompt('Podaj początek przedziału: ');
+        const liczbab=prompt('Podaj koniec przedziału: ');
+
+        if(lczb>=liczbaa && lczb<=liczbab){
+            divW.textContent("Liczba należy do przedziału")
+        } else{
+            divW.textContent("Liczba NIE należy do przedziału");
+        }*/
+
+                //ZADANIE 5
+            /*const liczba1 = prompt('Podaj pierwszą liczbę: ');
+            const liczba2 = prompt("Podaj drugą liczbę: ");
+            const liczba3 = prompt("Podaj trzecią liczbę")
+
+            if (liczba1>liczba2 && liczba2>liczba3){
+                divW.textContent = `${liczba1}, ${liczba2}, ${liczba3}`
+            } else if (liczba1<liczba2 && liczba2>liczba3 && liczba3<liczba1){
+                divW.textContent = `${liczba2}, ${liczba1}, ${liczba3}`
+            } else if (liczba1>liczba3 && liczba3>liczba2){
+                divW.textContent = `${liczba1}, ${liczba3}, ${liczba2}`
+            } else if(liczba3>liczba2 && liczba2>liczba1){
+                divW.textContent = `${liczba3}, ${liczba2}, ${liczba1}`
+            } else {
+                divW.textContent = `${liczba3}, ${liczba1}, ${liczba2}`
+            }*/
+
+                //ZADANIE 6
+                /*const liczba1=prompt('Podaj liczbę: ');
+                const liczba2 = prompt("Podaj liczbę drugą: ");
+
+                if(liczba1%liczba2==0){
+                    divW.textContent = `${liczba1} jest podzielna przez ${liczba2}`
+                } else {
+                    divW.textContent = `${liczba1} NIE jest podzielna przez ${liczba2}`
+                }*/
+    });
+
+        </script>
+    </body>
+</html>
