@@ -5,9 +5,99 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Funkcje</title>
+    <style>
+        div+div {
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
+<div>
+    <input type="number" name="liczba1" placeholder="Podaj liczbę 1">
+    <input type="number" name="liczba2" placeholder="Podaj liczbę 2">
+</div>
+<div>
+    <button>Suma</button>
+    <button>Różnica</button>
+    <button>Iloczyn</button>
+    <button>Iloraz</button>
+</div>
+<div>Tu będzie wynik: </div>
+
     <script>
+//pobieramy wszystkie buttony
+        const btns = document.querySelectorAll('button')
+
+//pobieramy input
+        const input1 = document.querySelector('input[name="liczba1"]');
+        const input2 = document.querySelector('input[name="liczba2"]');
+
+//pobieramy div, w którym będziemy umieszczać wynik obliczeń
+        const divResults = document.querySelector('div+div+div')
+
+//tworzymy funkcje dodawania, odejmowania, mnozenia i dzielenia
+        const suma = function(l1, l2){
+            return l1+l2;
+        };
+
+        const roznica = function(l1, l2) {
+            return l1-l2;
+        };
+
+        const iloczyn = function(l1,l2) {
+            return l1*l2;
+        };
+
+        const iloraz = function(l1, l2) {
+            return l1/l2;
+        };
+
+//podpinamy pod buttony obsługę zdarzenia click
+    //pierwszy button
+        btns[0].addEventListener('click',function() {
+            
+//pobieramy wartośći inputów 
+
+        const liczba1=input1.value*1;
+        const liczba2=input2.value*1;
+
+        divResults.textContent='Suma liczb wynosi: ' + suma(liczba1, liczba2)
+        });
+
+//drugi button
+        btns[1].addEventListener('click',function() {
+            
+            //pobieramy wartośći inputów 
+            
+                    const liczba1=input1.value*1;
+                    const liczba2=input2.value*1;
+            
+                    divResults.textContent='Różnica liczb wynosi: ' + roznica(liczba1, liczba2)
+        });
+
+        btns[2].addEventListener('click',function() {
+            
+            //pobieramy wartośći inputów 
+            
+                    const liczba1=input1.value*1;
+                    const liczba2=input2.value*1;
+            
+                    divResults.textContent='Iloczyn liczb wynosi: ' + iloczyn(liczba1, liczba2)
+        });
+
+        btns[3].addEventListener('click',function() {
+            
+            //pobieramy wartośći inputów 
+            
+                    const liczba1=input1.value*1;
+                    const liczba2=input2.value*1;
+            if(liczba1==0||liczba2==0)
+            {
+divResults.textContent='Podaj liczbę, która nie jest zerem!'
+            } else
+                    divResults.textContent='Iloraz liczb wynosi: ' + iloraz(liczba1, liczba2)
+        });
+
         /*const tekst = "Ładna pogoda"
         text(tekst)
         const a = 10;
@@ -21,7 +111,7 @@
             console.log(b)
         }
         text2(tekst)*/
-
+/*
         function suma(a, b){
             const s=a+b;
             console.log(s)
@@ -34,6 +124,9 @@
         suma(10,20)
         console.log
         console.log(suma(5,198))
+*/
+
+
     </script>
 </body>
 </html>
