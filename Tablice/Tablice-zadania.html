@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablice - zadania</title>
+</head>
+<body>
+    <input type="number" name="liczba" placeholder="Wpisz wielkość tablicy">
+    <button>Wykonaj</button>
+    <div class="tablica">Tu będzie wyświetlona tablica</div>
+    <div class="maksimum">Tu będzie maksymalna liczba: </div>
+    <div class="minimum">Tu będzie minimalna liczba: </div>
+    <div class="ilosc">Tu będzie ilość danej liczby</div>
+
+    <script>
+        //pobieramy element strony
+        const poleInput = document.querySelector('input[name="liczba"]');
+        const btn = document.querySelector('button');
+        const divTablica = document.querySelector('div.tablica');
+        const divMaks = document.querySelector('div.maksimum');
+        const divMin = document.querySelector('div.minimum');
+        const divIle = document.querySelector('div.ilosc');
+
+        //tworzymy tablicę
+        const liczby = [];
+
+        //funkcja obliczjąca maksimum tablicy
+        const maxTab = function(tab){
+            let maksliczba = tab[0]; //przyjmujemy, że maksymalna liczba to pierwsza liczba w tablicy
+            //następnie porównujemy tę liczbę z każdą liczbą w tablicy, jeśli jest mniejsza to wymieniamy
+for (const liczba of tab) {
+    if(maksliczba<liczba){
+        maksliczba = liczba;
+    }
+}
+return maksliczba;
+        }
+
+        //funkcja obliczająca minimum tablicy 
+        const minTab = function(tab){
+            let minliczba = tab[0]
+            for (const liczba of tab) {
+                if(minliczba<liczba){
+                    minliczba=liczba
+                }
+            }
+        }
+//funkcja obliczjąca częstość występowania konkretnej liczby w tablicy
+const ileRazy = function (tab, liczba) {
+let ile = 0;
+tab.forEach(liczbaWTablicy => {
+    if (liczbaWTablicy == liczba) ile++;
+});
+return ile;
+};
+
+        //obsługujemy zdarzenie click na buttonie
+        btn.addEventListener('click', function(){
+            //poniższy kod wykona się kiedy naciśniemy button
+
+            //zapełniamy tablicę losowymi liczbami z zakresu 0-100, ilość liczb podaje użytkownik
+    for(let i=0; i<parseInt(poleInput.value); i++){
+        liczby[i] = Math.round(Math.random()*100);
+    }
+
+
+
+    //wyświetlamy zawartość tablicy w divie
+    divTablica.textContent = liczby.join(', ');
+    //obliczamy maksymalną liczbę w tablicy liczby
+    divMaks.textContent = `Największa liczba to: ${maxTab(liczby)}`;
+    divMin.textContent = `Najmniejsza liczba to: ${minTab(liczby)}`;
+divIle.textContent = `Liczba 10 w tablicy występuje ${ileRazy(liczby, 10)} razy`
+        });
+    </script>
+    
+</body>
+</html>
