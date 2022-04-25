@@ -1,0 +1,90 @@
+div.same{
+  text-align: center; 
+  background-color: #c0c0c0; 
+}
+
+div.same1{
+    text-align: center; 
+    background-color: #ffff99; 
+}
+
+div.same2{
+    text-align: right; 
+    background-color: #800000; 
+}
+
+div.same3{
+    text-align: left; 
+    background-color: #ff99ff; 
+}
+
+h1{
+color: #ff0000;
+}
+
+h2{
+color: #008000;
+}
+
+h3{
+    color: #008080;
+}
+
+h4{
+color: #800080;
+}
+
+i.jeden{
+    color: #00ff00;
+}
+
+i.dwa{
+    color: #00ffff;
+}
+
+i.trzy{
+    color: #808000;
+}
+
+i.cztery{
+    color: #0000ff;
+}
+
+#pojedyncze{
+    background-color: #00ffff;
+}
+
+#pojedyncze1{
+    color: #000080;
+text-align: center;
+}
+
+#pojedyncze2{
+    color: #ffff00;
+}
+
+ol ol li{
+    color: #008000;
+}
+
+a:link{
+    background-color: #000080;
+    color: #00ffff;
+}
+
+a:visited{
+    background-color: #00ffff; 
+    color: #000080;
+}
+
+a:hover{
+    background-color: #ff0000; 
+    color: #ffff00; 
+    font-size: x-large; 
+    font-style: italic;
+}
+
+a:active{
+    background-color: #000000; 
+    color: #ffffff;
+}
